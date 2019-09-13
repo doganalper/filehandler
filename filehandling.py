@@ -30,7 +30,7 @@ while count<len(ext_list):
                 if not os.path.exists(f'C:\\Users\\{username}\\Downloads\\Torrentler'): #Torrentler adlı klasör yoksa koşulu koyduk
                     os.makedirs(f'C:\\Users\\{username}\\Downloads\\Torrentler') #klasörü yaratır
                     print('Torrentler klasörü oluşturuldu.')
-                    move(f'C:\\Users\\{username}\\Downloads\\{item}', f'C:\\Users\\{username}\\Downloads\\Torrentler') #klasik dosya taşıma amk
+                    move(f'C:\\Users\\{username}\\Downloads\\{item}', f'C:\\Users\\{username}\\Downloads\\Torrentler') #klasik dosya taşıma
                 else:
                     move(f'C:\\Users\\{username}\\Downloads\\{item}', f'C:\\Users\\{username}\\Downloads\\Torrentler')
             elif item.endswith(tuple(ext_list[count])): 
